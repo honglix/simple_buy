@@ -28,6 +28,20 @@ gem 'jbuilder', '~> 2.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
+gem 'devise'
+gem 'bootstrap-sass', '~> 3.4.1'
+gem 'sassc-rails', '>= 2.1.0'
+gem 'simple_form'
+gem 'jquery-rails'
+gem 'will_paginate'
+gem 'will_paginate-bootstrap'
+gem 'font-awesome-rails'
+gem 'ransack'
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'awesome_rails_console'
+
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -40,6 +54,9 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'guard-livereload', '~> 2.5', require: false
+  gem "better_errors"
+  gem "binding_of_caller"
 end
 
 group :test do
