@@ -1,0 +1,30 @@
+<h2><%= t('brand-index') %></h2>
+
+<div class="pull-right">
+  <%= link_to(t('btn-brand-new'), new_admin_brand_path, :class => 'btn btn-sm btn-default')%>
+</div>
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th><%= t('id') %></th>
+      <th><%= t('f-brand-name') %></th>
+      <th><%= t('f-brand-logo') %></th>
+      <th><%= t('f-brand-description') %></th>
+      <th><%= t('f-brand-options') %></th>
+    </tr>
+  </thead>
+
+  <% @brands.each do |brand| %>
+    <tr>
+      <td><%= brand.id %></td>
+      <td><%= brand.name %></td>
+      <td><%= brand.logo %></td>
+      <td><%= brand.description %></td>
+      <td>
+        <%= link_to(t('btn-brand-edit'), edit_admin_brand_path(brand), :class => 'btn btn-sm btn-default') %>
+      </td>
+    </tr>
+  <% end %>
+</table>

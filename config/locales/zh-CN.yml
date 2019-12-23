@@ -3,6 +3,17 @@ zh-CN:
   signup: "注册"
   loging: "登录"
   greeting: "欢迎"
+  warning-not-admin: "用户不是管理员"
+  brand-new: "新增品牌"
+  f-brand-name: "品牌名称"
+  f-brand-logo: "品牌图标"
+  f-brand-description: "品牌简介"
+  f-brand-submit: "提交"
+  btn-brand-new: "新增品牌"
+  brand-index: "品牌列表"
+  f-brand-options: "选择操作"
+  btn-brand-edit: "编辑更新"
+  brand-edit: "修改品牌"
 
   devise:
     sessions:
