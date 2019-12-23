@@ -1,0 +1,25 @@
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <%= link_to t('brand'), root_path, class:"navbar-brand" %>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav  navbar-right">
+        <% if !current_user %>
+          <li><%= link_to t("signup"), new_user_registration_path %></li>
+          <li><%= link_to t("loging"), new_user_session_path %></li>
+        <% else %>
+
+
+
+          <ul class="nav navbar-nav">
+                <li class="active"><a href="#"><%= t('greeting') %></a></li>
+                <li><a href="#"><%= current_user.email %></a></li>
+                <li><%= link_to "登出", destroy_user_session_path, method: :delete %></li>
+              </ul>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</nav>

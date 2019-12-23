@@ -1,2 +1,11 @@
 zh-CN:
-  brand: "品牌"
+  brand: "易购"
+  signup: "注册"
+  loging: "登录"
+  greeting: "欢迎"
+
+  devise:
+    sessions:
+      signed_in: "登陆成功"
+      signed_out: "登出成功"
+      already_signed_out: "登出成功"

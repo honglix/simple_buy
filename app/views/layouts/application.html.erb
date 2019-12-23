@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SimpleBuy</title>
+    <title><%= t('brand') %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,17 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container-fluid">
+      <div class="row">
+        <%= render "common/navbar" %>
+      </div>
+
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+
+      <%= yield %>
+    </div>
+    <%= render "common/footer" %>
   </body>
+  
 </html>
